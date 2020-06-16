@@ -1,0 +1,25 @@
+.nav__container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 60px 60px;
+  background-color: $primaryDarkBlue-0;
+  .nav__logo {
+    img {
+      @extend %styleLogo;
+    }
+  }
+  .navbar {
+    margin-left: auto;
+    .nav__item {
+      display: inline-block;
+      margin-left: 2.5rem;
+      list-style: none;
+      .nav__link {
+        color: $neutral-white;
+        text-decoration: none;
+        font-family: $fontFamily-1;
+       font-size: .8rem;
+      }
+    }
+  }
+}

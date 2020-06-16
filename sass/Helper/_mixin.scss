@@ -1,0 +1,43 @@
+%styleLogo {
+  width: 135px;
+  height: 40px;
+  display: block;
+}
+
+%styleBtn {
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: bold;
+  font-family: $fontFamily-1;
+  color: $neutral-white;
+  background: linear-gradient(to right, $accent-cyan, $accent-blue);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+@mixin styleBtn($p-tb, $p-lr) {
+  padding: $p-tb $p-lr;
+}
+
+@mixin fontStyle($fontSize, $tb, $lr, $lineHeight) {
+  font-size: $fontSize;
+  padding: $tb $lr;
+  line-height: $lineHeight;
+}
+
+//breakpoint
+//mobile
+@mixin mobile {
+  @media (min-width: $mobile) {
+    @content;
+  }
+}
+//desktop
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}

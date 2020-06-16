@@ -1,5 +1,7 @@
 //Colors
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 // Primary
 
 //intro and email sign up background
@@ -20,8 +22,14 @@ $accent-blue: hsl(198, 60%, 50%);
 $neutral-white: hsl(0, 0%, 100%);
 
 //FONT SIZE
-$fontSize: 14px;
+$font-size: 14px;
 
 //FONT FAMILY
-$fontFamily: 'Open Sans', sans-serif;
+$fontFamily-0: 'Open Sans', sans-serif;
+// Headings, Call-to-actions, Header Navigation
+$fontFamily-1: 'Raleway', sans-serif;
+
+//BREAKPOINTS
+$mobile: 375px;
+$desktop: 1440px;
 
